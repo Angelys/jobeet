@@ -32,6 +32,9 @@ function create_job($defaults = array())
   $job = new JobeetJob();
   $job->fromArray(array_merge(array(
     'category_id'  => $category->getId(),
+    'type'         => 'someType',
+    'logo'         => 'someLogo',
+    'url'          => 'someURL',
     'company'      => 'Sensio Labs',
     'position'     => 'Senior Tester',
     'location'     => 'Paris, France',
